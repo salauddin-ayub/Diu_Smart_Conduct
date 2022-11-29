@@ -6,6 +6,14 @@
   height: 40vmin;
   pointer-events: none;
 }
+.active{
+  display: inline-block;
+  color: #61dafb;
+  border-bottom: 5px solid #61dafb;
+  width: 15%;
+  border-radius: 1px;
+  transition: 0.5s ease;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -34,5 +42,6 @@
   }
   to {
     transform: rotate(360deg);
+    
   }
 }
