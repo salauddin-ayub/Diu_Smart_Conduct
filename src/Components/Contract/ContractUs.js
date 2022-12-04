@@ -1,11 +1,11 @@
-import React from 'react'
-import Navigation from '../Header/Footer/Navigation'
+import React from "react"
+import Navigation from "../Header/Navigation/Navigation"
 
 const ContractUs = () => {
   return (
     <div>
-        <Navigation></Navigation>
-        
+      <Navigation></Navigation>
+     
     </div>
   )
 }

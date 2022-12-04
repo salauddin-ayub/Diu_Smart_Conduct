@@ -3,8 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// import IMG from '../../imgs/listing2-850x550-removebg-preview.png'
-
 const HomeSlider = () => {
   const settings = {
     dots: true,

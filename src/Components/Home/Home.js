@@ -1,13 +1,12 @@
-import React from 'react'
-import Navigation from '../Header/Footer/Navigation'
-import HomeSlider from './HomeSlider'
+import React from "react"
+import Navigation from "../Header/Navigation/Navigation"
+import HomeSlider from "./HomeSlider"
 
 function Home() {
   return (
     <div>
-        <Navigation></Navigation>
-        <HomeSlider></HomeSlider>
-      
+      <Navigation></Navigation>
+      <HomeSlider></HomeSlider>
     </div>
   )
 }

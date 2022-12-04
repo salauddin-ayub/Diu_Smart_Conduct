@@ -1,27 +1,27 @@
-import React, { useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react"
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai"
+import { NavLink } from "react-router-dom"
 
-import { useEffect } from "react";
+import { useEffect } from "react"
 
 const Navigation = () => {
-  const [nav, setNav] = useState(false);
-  const [isSticky, setSticky] = useState(false);
+  const [nav, setNav] = useState(false)
+  const [isSticky, setSticky] = useState(false)
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
-      setSticky(true);
+      setSticky(true)
     } else {
-      setSticky(false);
+      setSticky(false)
     }
-  });
+  })
 
   const handleNav = () => {
-    setNav(!nav);
-  };
+    setNav(!nav)
+  }
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <header
@@ -29,18 +29,14 @@ const Navigation = () => {
         !isSticky ? " bg-transparent" : "scrolled"
       }`}
     >
-      {/* max-w-[1536px]    max-w-[1240px] */}
       <div className="flex justify-between items-center  max-w-[1536px] mx-auto px-4 shadow-xl container ">
         <div className="     text-left    flex justify-between">
-          <p className="w-full text-3xl font-bold bg-gradient-to-r text-transparent bg-clip-text from-green-500 to-blue-600 hover:from-pink-500 hover:to-yellow-500">
-            DIU SMART
+          <p className="w-full text-2xl font-bold bg-gradient-to-r text-transparent bg-clip-text from-teal-500 to-blue-600 hover:from-pink-500 hover:to-yellow-500">
+            DIU SMART CONDUCT
           </p>
-
-          {/* <img className=" w-40 h-16 py-3" src="https://i.ibb.co/7YMsM83/main-Logos-removebg-preview.png" alt="" />{" "} */}
         </div>
         <ul className="hidden md:flex ">
           <NavLink to="/" className="p-4 hover:text-[#61dafb]">
-            {/* #61dafb */}
             Home
           </NavLink>
           <NavLink to="/contract" className="p-4 hover:text-[#61dafb]">
@@ -56,8 +52,8 @@ const Navigation = () => {
             Contact
           </NavLink>
 
-          <NavLink to="/dashboard" className="p-4 hover:text-[#61dafb]">
-            Dashboard
+          <NavLink to="/services" className="p-4 hover:text-[#61dafb]">
+            Service
           </NavLink>
         </ul>
 
@@ -79,9 +75,7 @@ const Navigation = () => {
           }
         >
           <div className="flex bg-white">
-            <h1 className="  w-full text-3xl font-bold text-[#00df9a] m-5 mt-8  bg-gradient-to-r text-transparent bg-clip-text from-green-500 to-blue-600 hover:from-pink-500 hover:to-yellow-500">
-              {/* <img src={logo} className="w-24" alt="" /> */}
-            </h1>
+            <h1 className="  w-full text-3xl font-bold text-[#00df9a] m-5 mt-8  bg-gradient-to-r text-transparent bg-clip-text from-green-500 to-blue-600 hover:from-pink-500 hover:to-yellow-500"></h1>
             <h1 className="mt-10 text-black" onClick={handleNav}>
               {" "}
               <AiOutlineClose size={20} />
@@ -111,7 +105,7 @@ const Navigation = () => {
         </ul>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation
