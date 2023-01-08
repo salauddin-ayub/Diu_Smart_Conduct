@@ -33,7 +33,7 @@ const Navigation = () => {
       <div className="flex justify-between items-center  max-w-[1536px] mx-auto px-4 shadow-xl container ">
         <div className="     text-left    flex justify-between">
           <p className="w-full text-3xl font-bold bg-gradient-to-r text-transparent bg-clip-text from-green-500 to-blue-600 hover:from-pink-500 hover:to-yellow-500">
-            DIU SMART
+            {/* DIU SMART */}
           </p>
 
           {/* <img className=" w-40 h-16 py-3" src="https://i.ibb.co/7YMsM83/main-Logos-removebg-preview.png" alt="" />{" "} */}
