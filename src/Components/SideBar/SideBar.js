@@ -2,14 +2,10 @@ import React, { useState } from "react"
 import arrow from "../../Assets/left-arrow2.png"
 import { FaGuilded } from "react-icons/fa"
 import { FaInnosoft } from "react-icons/fa"
-import { FaSlack } from "react-icons/fa"
+
 
 const SideBar = () => {
   const [open, setOpen] = useState(true)
-  const Menu = [
-    { title: "Room-list", icon: "<FaInnosoft />" },
-    { title: "Add-Room", icon: "<FaSlack/>" },
-  ]
   return (
     <div className="flex">
       <div
